@@ -9,18 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://allfont.ru/allfont.css?fonts=gentium-book-basic" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="validating.js"></script>
     <title>Restaurant</title>
 </head>
 <body>
     <div id="bodyContainer">
         <div id="header" class="mainBlock">
-            <header>
+            <header class="header">
                 <a href="#" id="logo">
                      <img src="assets/layout/header/Logo.png" alt="Logo"> 
                 </a>
-                <nav>
+                <nav class="headerNav">
                     <a href="" id="navEl1">
                      Home
                     </a>
@@ -42,13 +46,13 @@
                 </nav>
                 <div id="socialHeaderContainer">
                     <a href="http://twitter.com/" id="socialTwitter">
-                        <img src="assets/layout/header/socialTwitter.png" alt="">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
                     <a href="http://youtube.com/" id="socialYoutube">
-                        <img src="assets/layout/header/socialYoutube.png" alt="">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
                     </a>
                     <a href="http://facebook.com/" id="socialFacebook">
-                        <img src="assets/layout/header/socialFacebook.png" alt="">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
                 </div>
             </header>
@@ -56,8 +60,8 @@
                 the right ingredients for the right food
             </span>
             <img src="assets/layout/header/decoration.png" alt="" id="decoration">
-            <a href="#" id="bookATable">BOOK A TABLE</a>
-            <a href="#" id="seeTheMenu">SEE THE MENU</a>
+            <a href="#" id="bookATable" class="headerButton">BOOK A TABLE</a>
+            <a href="#" id="seeTheMenu" class="headerButton">SEE THE MENU</a>
         </div>
         <div id="justTheRightFoodAbove" class="mainBlock">
             <div id="rightFoodAboveArticleContainer">
@@ -254,23 +258,23 @@
                         <form action="post" id="rightFoodBelowForm">
                             <div class="fieldContainer">
                                 <label for="name">Name</label>
-                                <input id="name" type="text" placeholder="your name *">
+                                <input id="name" class="bookNowField" onkeyup="formListener()" type="text" placeholder="your name *">
                             </div>
                             <div class="fieldContainer">
                                 <label for="email">Name</label>
-                                <input id="email" type="text" placeholder="your email *">
+                                <input id="email" class="bookNowField" onkeyup="formListener()" type="text" placeholder="your email *">
                             </div>
                             <div class="fieldContainer">
                                 <label for="date">Date</label>
-                                <input id="date" type="text" pattern="\d\d.\d\d.\d\d\d\d" placeholder="date *">
+                                <input id="date" class="bookNowField" onkeyup="formListener()" type="text" pattern="\d\d.\d\d.\d\d\d\d" placeholder="date *">
                                 <img src="assets/layout/justTheRightFoodBelow/calendar.png" alt="" id="calendarImg">
                             </div>
                             <div class="fieldContainer">
                                 <label for="partyNumber">Party number</label>
-                                <input id="partyNumber" type="text" pattern="\d+" placeholder="party number *">
+                                <input id="partyNumber" class="bookNowField" onkeyup="formListener()" type="text" pattern="\d+" placeholder="party number *">
                                 <img src="assets/layout/justTheRightFoodBelow/arrow.png" alt="" id="arrowImg">
                             </div>
-                            <input id="submitBtn" type="submit" value="Book now!">
+                            <input class="submitBtn" id="disabledBtn" disabled="true" type="submit" value="Book now!">
                         </form>
                     </div>
                 </li>
@@ -285,7 +289,7 @@
                     <img src="assets/layout/footer/textDecoration.png" alt="Decoration" id="footerDecoration1" class="footerDecoration">
                     <p id="aboutUsText" class="footerText">
                         Lambda's new and expanded Chelsea location
-                        represents a truly authentic <b>Greek</b> patisserie, 
+                        represents a truly authentic <span class="boldSpan">Greek</span> patisserie, 
                         featuring breakfasts of fresh croissants and
                         steaming bowls of cafe&#x301.<br> 
                         Lamda the best restaurant in town
@@ -297,8 +301,8 @@
                     </span>        
                     <img src="assets/layout/footer/textDecoration.png" alt="Decoration" id="footerDecoration2" class="footerDecoration">
                     <p id="openingHoursText" class="footerText">
-                        <b>Mon-Thu:</b> 7:00am-8:00pm<br>
-                        <b>Fri-Sun:</b> 7:00am-10:00pm
+                        <span style="display: block;"><span class="boldSpan">Mon-Thu:</span> 7:00am-8:00pm</span>
+                        <span style="display: block;"><span class="boldSpan">Fri-Sun:</span> 7:00am-10:00pm</span>
                     </p>
 
                     <ul id="cardsList" class="footerList">
@@ -314,15 +318,15 @@
                     </span>
                     <img src="assets/layout/footer/textDecoration.png" alt="Decoration" id="footerDecoration3" class="footerDecoration">
                     <p id="ourLocationText" class="footerText">
-                        <b>19th Paradise Street Sitia</b><br>
-                        <b>128 Meserole Avenue</b>
+                        <span class="boldSpan" style="display: block;">19th Paradise Street Sitia</span>
+                        <span class="boldSpan" style="display: block;">128 Meserole Avenue</span>
                     </p>
-
+                    
                     <ul id="footerSocialList" class="footerList">
-                        <li><a href="https://facebook.com/"><img src="assets/layout/footer/facebook.png" alt=""></a></li>
-                        <li><a href="https://youtube.com/"><img src="assets/layout/footer/youtube.png" alt=""></a></li>
-                        <li><a href="https://twitter.com/"><img src="assets/layout/footer/twitter.png" alt=""></a></li>
-                        <li><a href="https://tut.by/"><img src="assets/layout/footer/news.png" alt=""></a></li>
+                        <li><a href="https://facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://tut.by/"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -330,3 +334,4 @@
     </div>
 </body>
 </html>
+LOrem1000
