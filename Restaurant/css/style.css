@@ -1,0 +1,699 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+#bodyContainer {
+    width: 1600px;
+    height: 5000px;
+    margin: auto;
+}
+
+.mainBlock {
+    width: 1600px;
+    margin: auto;
+}
+
+#header {
+    background-image: url(../assets/layout/header/bg1shadow.png), url(../assets/layout/header/bg1.png);
+    background-repeat: no-repeat;
+    height: 750px;
+}
+
+#justTheRightFoodAbove {
+    background-image: url(../assets/layout/justTheRightFoodAbove/pattern26.png), url(../assets/layout/justTheRightFoodAbove/bg2.png);
+    height: 710px;
+}
+
+#fineIngredients {
+    background-image: url(../assets/layout/fineIngredients/bg3.png);
+    height: 758px;
+}
+
+#menu {
+    background-image: url(../assets/layout/menu/pattern4.png), url(../assets/layout/menu/bg46.png);
+    height: 994px;
+}
+
+#guestReview {
+    background-image: url(../assets/layout/guestReviews/bg5.png);
+    height: 758px;
+}
+
+#justTheRightFoodBelow {
+    background-image: url(../assets/layout/justTheRightFoodBelow/pattern26.png), url(../assets/layout/justTheRightFoodBelow/bgShadow.png);
+    height: 710px;
+}
+
+#footer {
+    background-image: url(../assets/layout/footer/bg7.png);
+    height: 320px;
+}
+
+/*
+HEADER STYLES
+*/
+
+header {
+    height: 9px;
+}
+
+header * {
+    display: inline-block;
+}
+
+#logo {
+    font-size: 35px;
+    position: absolute;
+    top: 41px;
+    left: 331px;
+    font-family: 'Yeseva One';
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 490px;
+    margin-left: 222px;
+    padding: 0;
+}
+
+nav a {
+    margin: 0;
+    padding: 48px 13px 18px 13px;
+    height: 100%;
+    margin-bottom: 7px;
+    color: #FFFEFF;
+    font-size: 21px;
+    font-family: 'Gentium Book Basic';
+    font-weight: bold;
+}
+
+nav a:hover {
+    border-top: 3px rgba(255, 255, 255, 0.6) solid;
+    padding-top: 45px;
+}
+
+#navEl1 {
+    margin-right: 21px;
+}
+
+#navEl2 {
+    margin-right: 21px;
+}
+
+#navEl3 {
+    margin-right: 27px;
+}
+
+#navEl4 {
+    margin-right: 21px;
+}
+
+#navEl5 {
+    margin-right: 23px;
+}
+
+#socialHeaderContainer {
+    position: absolute;
+    left: 1456px;
+    top: 50px;
+}
+
+#socialTwitter {
+    margin-right: 14px;
+}
+
+#socialYoutube {
+    margin-right: 11px;
+}
+
+#calloutText {
+    user-select: none; 
+    position: absolute;
+    text-align: center;
+    line-height: 118px;
+    font-size: 90px;
+    width: 960px;
+    left: 472px;
+    top: 213px;
+    font-family: 'Yeseva One';
+}
+
+#decoration {
+    position: absolute;
+    left: 840px;
+    top: 474px;
+}
+
+#bookATable {
+    border: 1px black solid;
+    background-color: rgba(0, 0, 0, 0.55);
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-top: 16px;
+
+    display: block;
+    position: absolute;
+    top: 551px;
+    left: 708px;
+    height: 39px;
+    width: 226px;
+}
+
+#seeTheMenu {
+    border: 1px white solid;
+    background-color: rgba(255, 255, 255, 0.23);
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-top: 16px;
+
+    display: block;
+    position: absolute;
+    top: 551px;
+    left: 966px;
+    height: 39px;
+    width: 226px;
+}
+
+/*
+END HEADER STYLES
+*/
+
+/*
+JUST THE RIGHT FOOD ABOVE STYLES
+*/
+
+#rightFoodAboveArticleContainer {
+    display: inline-block;
+    vertical-align: top;
+
+    margin-top: 109px;
+    margin-left: 294px;
+}
+
+#rightFoodAboveTitle {
+    display: block;
+    
+    text-align: center;
+    font-family: 'Yeseva One';
+    font-size: 36px;
+    line-height: 24px;
+    color: #DD9A00;
+}
+
+#rightFoodAboveDecoration {
+    margin-top: 23px;
+    margin-left: 81px;
+}
+
+#rightFoodAboveText {
+    margin-top: 22px;
+    width: 410px;
+
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 24px;
+    color: #4B4B4B;
+}
+
+#cookerImg {
+    margin-top: 49px;
+    margin-left: 131px;
+}
+
+#dishImg {
+    margin-top: 55px;
+    margin-left: 31px;
+}
+
+/*
+END JUST THE RIGHT FOOD ABOVE STYLES
+*/
+
+/*
+FINE INGREDIENTS STYLES
+*/
+
+#ingredientsContainer {
+    background: url(../assets/layout/fineIngredients/articleBg.png);
+    height: 557px;
+    width: 570px;
+
+    position: absolute;
+    top: 1560px;
+    left: 967px;
+}
+
+#titleIngredients {
+    font-family: 'Yeseva One';
+    font-size: 36px;
+    margin-top: 76px;
+    margin-left: 136px;
+    display: block;
+}
+
+#decorationIngredients {
+    display: block;
+    margin-top: 15px;
+    margin-left: 162px;
+}
+
+#fineIngredientsText {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    text-align: center;
+
+    width: 420px;
+    margin-top: 24px;
+    margin-left: 75px;
+    line-height: 24px;
+}
+
+#ingredientsList {
+    margin-top: 68px;
+    margin-left: 90px;
+}
+
+#ingredientsList li {
+    display: inline-block;
+    margin-right: 26px;
+}
+
+/*
+END FINE ENGREDIENTS STYLES
+*/
+
+/*
+MENU STYLES
+*/
+
+#menu {
+    vertical-align: top;
+}
+
+.menuCol {
+    display: inline-block;
+    margin-top: 109px;
+    width: 465px;
+}
+
+#menuCol1 {
+    margin-left: 280px;
+}
+
+#menuCol2 {
+    margin-left: 132px;
+}
+
+.menuCat {
+    display: block;
+    margin-bottom: 73px;
+}
+
+.menuCatTitle {
+    display: block;
+    text-align: center;
+    margin-left: -27px;
+    
+    font-family: 'Yeseva One';
+    font-size: 36px;
+    line-height: 24px;
+    color: #DD9A00;
+}
+
+.menuCatDecoration {
+    margin-top: 23px;
+    margin-left: 95px;
+    margin-bottom: -11px;
+}
+
+#menu ul {
+    list-style: none;
+    margin-left: -10px;
+    width: 465px;
+}
+
+#menu li {
+    padding-right: 20px;
+    padding-left: 12px;
+    margin-top: 35px;
+}
+
+#menu .special {
+    background: url(../assets/layout/menu/border.png) no-repeat;
+    background-size: contain;
+
+    margin-top: 7px;
+    margin-bottom: -12px;
+    padding-top: 28px;
+    padding-bottom: 12px;
+}
+
+#menu .name {
+    font-family: 'Yeseva One';
+    color: #D7A015;
+    font-size: 21px;
+}
+
+#menu .price {
+    font-family: 'Yeseva One';
+    color: #D7A015;
+    font-size: 21px;
+
+    float: right;
+}
+
+#menu .hr {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+#menu .description {
+    color: #4C4C4C;
+    font-family: 'Lato';
+}
+
+/*
+END MENU STYLES
+*/
+
+/*
+GUEST REVIEWS STYLES
+*/
+
+#reviewsContainer {
+    background: url("../assets/layout/guestReviews/articleBg.png");
+    height: 557px;
+    width: 770px;
+
+    position: absolute;
+    top: 3312px;
+    left: 567px;
+}
+
+#reviewsTitle {
+    display: block;
+    font-family: 'Yeseva One';
+    font-size: 36px;
+
+    margin-top: 76px;
+    margin-left: 255px;
+}
+
+#reviewsDecoration {
+    display: block;
+    margin-top: 15px;
+    margin-left: 263px;
+}
+
+#reviewsQuote {
+    display: inline-block;
+    font-family: 'Georgia';
+
+    position: absolute;
+    top: 154px;
+    left: 28px;
+    font-size: 96px;
+    opacity: 0.6;
+}
+
+#reviewsText {
+    display: inline-block;
+    text-align: center;
+    margin-top: 19px;
+    margin-left: 72px;
+    width: 627px;
+    
+    color: #DEE0DF;
+    font-family: 'Gentium';
+    font-weight: 700;
+    font-size: 23px;
+
+    line-height: 45px;
+    word-spacing: 6px;
+}
+
+#reviewsSign {
+    display: block;
+    font-family: 'Lato';
+    font-size: 18px;
+
+    margin-top: 29px;
+    margin-left: 307px;
+}
+
+/*
+END GUEST REVIEWS STYLES
+*/
+
+/*
+JUST THE RIGHT FOOD BELOW STYLES
+*/
+
+#rightFoodBelowList {
+    display: block;
+
+    padding-top: 100px;
+    padding-left: 215px;
+}
+
+#rightFoodBelowList li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#rightFoodBelowCherry {
+    margin-left: 26px;
+}
+
+#rightFoodBelowArticle {
+    margin-top: 5px;
+    margin-left: 104px;
+}
+
+#rightFoodBelowTitle {
+    display: block;
+    
+    padding-left: 36px;
+    font-family: 'Yeseva One';
+    font-size: 36px;
+    line-height: 24px;
+    color: #DD9A00;
+}
+
+#rightFoodBelowDecoration {
+    margin-top: 23px;
+    margin-left: 82px;
+    margin-bottom: 22px;
+}
+
+.rightFoodBelowText {
+    margin-bottom: 10px;
+    width: 415px;
+
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 24px;
+    color: #4B4B4B;
+}
+
+form {
+    width: 460px;
+    margin-left: -8px;
+    margin-top: 38px;
+}
+
+.fieldContainer {
+    display: inline-block;
+    margin-bottom: 22px;
+}
+
+form :nth-child(1) {
+    margin-right: 24px;
+}
+
+form :nth-child(3) {
+    margin-right: 4px;
+}
+
+.fieldContainer input {
+    width: 156px;
+    margin-top: 6px;
+    padding: 6px;
+    padding-left: 13px;
+    padding-right: 30px;
+    opacity: 0.5;
+
+    color: black;
+    border: 1px #C8C6C7 solid;
+    border-radius: 0;
+
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 16px;
+}
+
+.fieldContainer input:hover {
+    border: 1px #C89F2D solid;
+}
+
+.fieldContainer input:focus {
+    outline: none;
+    border: 1px #C89F2D solid;
+}
+
+.fieldContainer label {
+    display: block;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 14px;
+    color: #D8A21D;
+}
+
+#calendarImg {
+    cursor: pointer;
+    position: relative;
+    left: -30px;
+}
+
+#arrowImg {
+    cursor: pointer;
+    position: relative;
+    top: -2px;
+    left: -28px;
+}
+
+#submitBtn {
+    margin-top: 11px;
+    margin-left: 116px;
+
+    border: 0;
+    width: 200px;
+    height: 36px;
+    background-color: #D7A016;
+    color: #FEFEFE;
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+/*
+END JUST THE RIGHT FOOD BELOW STYLES
+*/
+
+/*
+FOOTER STYLES
+*/
+
+#footerRow {
+    margin-left: 215px;
+    height: 100%;
+}
+
+.footerCol {
+    display: inline-block;
+    width: 370px;
+    height: 100%;
+    margin-right: 33px;
+    vertical-align: top;
+}
+
+
+.footerTitle {
+    display: block;
+
+    font-family: 'Yeseva One';
+    font-size: 21px;
+    margin-top: 58px;
+}
+
+#aboutUsTitle {
+    margin-left: 137px;
+}
+
+#openingHoursTitle {
+    margin-left: 100px;
+}
+
+#ourLocationTitle {
+    margin-left: 104px;
+}
+
+
+.footerDecoration {
+    margin-top: 15px;
+}
+
+#footerDecoration1 {
+    margin-left: 84px;
+}
+
+#footerDecoration2 {
+    margin-left: 79px;
+}
+
+#footerDecoration3 {
+    margin-left: 73px;
+}
+
+
+.footerText {
+    display: inline-block;
+    margin-top: 14px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#openingHoursText {
+    margin-left: 81px;
+}
+
+#ourLocationText {
+    margin-left: 73px;
+}
+
+
+.footerList {
+    list-style: none;
+    margin-top: 50px;
+}
+
+.footerList li {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+#cardsList {
+    margin-left: 122px;
+}
+
+#footerSocialList {
+    margin-left: 132px;
+}
+
+#footerSocialList li:nth-child(2) {
+    margin-right: 8px;
+}
+
+#footerSocialList li:nth-child(3) {
+    margin-right: 8px;
+}
+
+/*
+END FOOTER STYLES
+*/
