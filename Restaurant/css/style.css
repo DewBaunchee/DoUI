@@ -308,11 +308,11 @@ MENU STYLES
     width: 456px;
 }
 
-#menuCol1 {
+#menuLeftCol {
     margin-left: 272px;
 }
 
-#menuCol2 {
+#menuRightCol {
     margin-left: 141px;
 }
 
@@ -373,7 +373,7 @@ MENU STYLES
     float: right;
 }
 
-#menu .hr {
+#menu .menuSeparator {
     display: block;
     margin-top: 8px;
     margin-bottom: 13px;
@@ -418,7 +418,6 @@ GUEST REVIEWS STYLES
 }
 
 #reviewsQuote {
-    display: inline-block;
     font-family: 'Georgia';
 
     position: absolute;
@@ -572,8 +571,15 @@ JUST THE RIGHT FOOD BELOW STYLES
 #arrowImg {
     cursor: pointer;
     position: relative;
-    top: -2px;
-    left: -28px;
+    top: 3px;
+    left: -33px;
+    padding: 5px;
+
+    transition: 0.5s ease;
+}
+
+#arrowImg:hover {
+    transform: rotateX(180deg);
 }
 
 .submitBtn {
